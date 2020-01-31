@@ -9,6 +9,6 @@
 
     </head>
     <body>
-        <h1>Welcome to Cars Project</h1>
+        <h1>Welcome {{$name}}, I am {{$age}} years old.</h1>
     </body>
 </html>
