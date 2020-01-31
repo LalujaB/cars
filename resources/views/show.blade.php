@@ -1,20 +1,18 @@
-<!doctype html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-</head>
-<body>
+@extends ('layouts/master')
 
-    @if($car)
-    <div>
-    {{$car->title}}
-    {{$car->producer}}
-    {{$car->number_od_doors}}
-    </div>
-    @endif
-</body>
-</html>
+@section('title')
+    Cars
+@endsection
+
+@section('content')
+
+
+        @if($car)
+            <div>
+                {{$car->title}}
+                {{$car->producer}}
+                {{$car->number_od_doors}}
+            </div>
+        @endif
+
+@endsection
